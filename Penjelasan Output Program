@@ -1,0 +1,14 @@
+Pembuatan Rekening Baru:
+Di awal, program langsung bikin 2 akun rekening baru atas nama Ajriya (saldo awal Rp 500.000) dan Alina (saldo awal Rp 200.000) lewat method constructor.
+
+Tes Transfer Berhasil:
+Pas coba transfer uang sebesar Rp 150.000 dari Ajriya ke Alina, kodenya berhasil ngerjain perintahnya. Saldo Ajriya berkurang jadi Rp 350.000, sedangkan saldo Alina bertambah jadi Rp 350.000.
+
+Tes Transfer Gagal (Over Saldo):
+Pas nyoba transfer lagi dari Ajriya ke Alina sebesar Rp 1.000.000, sistem langsung nolak dan nampilin pesan error. Ini ngebuktihin kalo validasi enkapsulasi di method transfer() udah jalan dengan bener, karena saldo Ajriya cuma sisa Rp 350.000 jadi gak cukup buat transaksi.
+
+Cek Saldo Akhir:
+Karena transfer kedua tadi gagal, saldo akhir kedua rekening tetep aman dan gak berubah (masing-masing tetep Rp 350.000).
+
+Cek Total Rekening:
+Output nampilin Total akun terdaftar: 2. Ini ngebuktihin kalo static variable (totalRekening) berhasil bekerja buat ngitung total objek rekening yang udah dibuat dari awal.
